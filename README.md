@@ -1,31 +1,30 @@
-# Adonis fullstack application
-
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
-
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+# Adonis Sentry Example
 
 ## Setup
 
-Use the adonis command to install the blueprint
-
+Install dependencies.
 ```bash
-adonis new yardstick
+yarn
+```
+Or
+```bash
+npm install
 ```
 
-or manually clone the repo and then run `npm install`.
+## Add you own credentials
+
+Add your DSN in the `.env` file.
+
+```bash
+SENTRY_DSN=
+SENTRY_ENVIRONMENT=
+```
 
 
-### Migrations
+## Testing configuration
 
-Run the following command to run startup migrations.
+You can test your configuration using the command:
 
-```js
-adonis migration:run
+```bash
+adonis sentry:test
 ```
